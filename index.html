@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="alphasec">
+    <meta name="copyright" content="Copyright © 2025 alphasec. All rights reserved.">
+    <meta name="description" content="Travel Itinerary Planner - Plan your destinations and visualize them on an interactive map">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Travel Itinerary Planner</h1>
+        <div class="add-destination-form">
+            <div class="form-group">
+                <label for="destinationName">Destination Name</label>
+                <input type="text" id="destinationName" placeholder="Enter destination name (e.g., Paris, Yellowstone, Lake Tahoe)">
+                <div class="error-message" id="destinationNameError"></div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <button class="btn" id="addDestinationBtn" onclick="addDestination()" disabled>Add Destination</button>
+        </div>
+        <div id="destinationListContainer">
+            <div class="empty-state">
+                <h3>No destinations added yet</h3>
+                <p>Start typing to search for cities, national parks, lakes, and other destinations to add to your itinerary.</p>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=places&callback=initMap"></script>
+    <script src="script.js"></script>
+</body>
+</html>
