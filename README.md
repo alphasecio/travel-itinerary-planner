@@ -2,6 +2,7 @@
 
 A simple web-based travel planning application that helps you discover and organise destinations. Search for cities, national parks, landmarks, lakes, and other points of interest, then visualize them on an interactive map.
 
+![travel-itinerary-planner](./travel-itinerary-planner.png)
 
 ## Features
 
@@ -10,7 +11,6 @@ A simple web-based travel planning application that helps you discover and organ
 - **Destination Management**: Add, remove, and reorder destinations in your itinerary
 - **Real-time Preview**: See destination previews on the map as you hover over search results
 - **Responsive Design**: Clean, modern interface that works on desktop and mobile devices
-
 
 ## Getting Started
 
